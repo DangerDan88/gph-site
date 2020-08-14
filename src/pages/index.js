@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import horsejump from "../images/horsejump.jpg"
+//import horsejump from "../images/horsejump.jpg"
 
 const indexPage = () => (
   <Layout>
@@ -34,7 +34,7 @@ const indexPage = () => (
           {" "}
           <img
             className="w-full h-64 sm:h-auto rounded-lg"
-            src={horsejump}
+            src={""}
             alt="logo"
           />
         </div>
