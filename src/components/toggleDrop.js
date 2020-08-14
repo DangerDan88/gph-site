@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, Component } from "react"
 import { Link } from "gatsby"
 import onClickOutside from "react-onclickoutside"
 
