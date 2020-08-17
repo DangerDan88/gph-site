@@ -1,6 +1,6 @@
 {
   "name": "gph",
-  "private": true,
+  "private": false,
   "description": "gph site",
   "version": "0.1.0",
   "author": "Daniel Osornio",

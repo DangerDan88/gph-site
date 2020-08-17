@@ -1,8 +1,8 @@
+require("dotenv").config()
 import React, { Component } from "react"
 import { Map, GoogleApiWrapper } from "google-maps-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-require("dotenv").config()
 
 const mapStyles = {
   width: "75%",
