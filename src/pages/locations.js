@@ -1,8 +1,8 @@
-require("dotenv").config()
 import React, { Component } from "react"
 import { Map, GoogleApiWrapper } from "google-maps-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import config from "gatsby-plugin-config"
 
 const mapStyles = {
   width: "75%",
@@ -32,5 +32,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: API_KEY,
+  apiKey: config.API_KEY,
 })(MapContainer)

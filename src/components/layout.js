@@ -35,17 +35,16 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}
           {` `}
           GPH Equestrian{" "}
-          <a href="https://www.instagram.com/gphequestrian/" target="_blank">
+          <a href="https://www.instagram.com/gphequestrian/">
             {" "}
             <FaInstagram size={28} />
           </a>
-          <a href="https://www.facebook.com/gphequine" target="_blank">
+          <a href="https://www.facebook.com/gphequine">
             {" "}
             <FaFacebook size={28} />{" "}
           </a>
           <a
             href="https://infallible-franklin-71e6b4.netlify.app"
-            target="_blank"
             className="flex float-right"
           >
             Created By DAO

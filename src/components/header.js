@@ -1,9 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React from "react"
 import GPH from "../images/gphlogo.jpg"
 import { FaBars } from "react-icons/fa"
-import ToggleDrop from "./toggleDrop"
+import toggleDrop from "./toggleDrop"
 
 const Header = ({ siteTitle }) => (
   <header className="bg-green-900">
@@ -18,10 +18,10 @@ const Header = ({ siteTitle }) => (
           className="rounded-lg"
         />
       </div>
-      <label for="menu-toggle" className="cursor-pointer lg:hidden block">
+      <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
         <FaBars className="bg-white cursor-pointer fill-current text-gray-900 w-6 h-6" />
       </label>
-      <input type="checkbox" className="hidden" id="menu-toggle" />
+      <input id="menu-toggle" type="checkbox" className="hidden" />
 
       <div
         className="hidden lg:flex lg:items-center lg:w-auto w-full"
@@ -48,7 +48,7 @@ const Header = ({ siteTitle }) => (
                 About Us{" "}
               </Link>
             </li>
-            <ToggleDrop />
+            <toggleDrop />
             <li>
               {" "}
               <Link
