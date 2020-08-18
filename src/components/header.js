@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import GPH from "../images/gphlogo.jpg"
 import { FaBars } from "react-icons/fa"
-import toggleDrop from "./toggleDrop"
+import ToggleDrop from "./toggleDrop"
 
 const Header = ({ siteTitle }) => (
   <header className="bg-green-900">
@@ -48,7 +48,7 @@ const Header = ({ siteTitle }) => (
                 About Us{" "}
               </Link>
             </li>
-            <toggleDrop />
+            <ToggleDrop />
             <li>
               {" "}
               <Link
