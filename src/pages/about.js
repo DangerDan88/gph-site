@@ -30,7 +30,7 @@ const aboutPage = () => (
       </div>
       <main class="flex flex-col-reverse sm:flex-row items-center py-12">
         <div class="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h2 class="uppercase text-4xl text-white  leading-none tracking-wide mb-2">
+          <h2 class="uppercase text-4xl text-white leading-none tracking-wide mb-2 pl-4">
             The Boss
           </h2>
 
@@ -51,7 +51,7 @@ const aboutPage = () => (
       </main>
       <main class="flex flex-col-reverse sm:flex-row items-center py-12">
         <div class="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h3 class="uppercase text-4xl text-white  leading-none tracking-wide mb-2">
+          <h3 class="uppercase text-4xl text-white  leading-none tracking-wide mb-2 pl-4">
             The Book Keeper
           </h3>
 
@@ -72,7 +72,7 @@ const aboutPage = () => (
       </main>
       <main class="flex flex-col-reverse sm:flex-row items-center py-12">
         <div class="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h4 class="uppercase text-4xl text-white  leading-none tracking-wide mb-2">
+          <h4 class="uppercase text-4xl text-white  leading-none tracking-wide mb-2 pl-4">
             The Girlies
           </h4>
           <p class="text-white text-xl leading-relaxed mb-12">
