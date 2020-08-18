@@ -2,11 +2,10 @@ import React, { Component } from "react"
 import { Map, GoogleApiWrapper } from "google-maps-react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import config from "gatsby-plugin-config"
 
 const mapStyles = {
-  width: "75%",
-  height: "75%",
+  width: "25%",
+  height: "25%",
 }
 
 export class MapContainer extends Component {
@@ -18,7 +17,7 @@ export class MapContainer extends Component {
           {" "}
           <Map
             google={this.props.google}
-            zoom={14}
+            zoom={12}
             style={mapStyles}
             initialCenter={{
               lat: -1.2884,
@@ -32,5 +31,5 @@ export class MapContainer extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: config.API_KEY,
+  apiKey: process.env.GATSBY_API_KEY,
 })(MapContainer)
