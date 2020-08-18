@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import onClickOutside from "react-onclickoutside"
 
-const ToggleDrop = function () {
+const ToggleDrop = () => {
   const [toggled, toggle] = useState(false)
   ToggleDrop.handleClickOutside = () => toggle(false)
   return (
@@ -53,6 +53,8 @@ const ToggleDrop = function () {
     </li>
   )
 }
+
+ToggleDrop.prototype = {}
 
 const clickOutsideConfig = {
   handleClickOutside: () => ToggleDrop.handleClickOutside,
