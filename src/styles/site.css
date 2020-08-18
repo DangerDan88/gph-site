@@ -22,13 +22,6 @@ html {
   font-family: "Tinos", serif;
 }
 
-#contact {
-  background-image: url("../images/kidjump.jpg");
-  background-position: center;
-  background-size: inherit;
-  background-repeat: no-repeat;
-}
-
 hr {
   height: 2px;
   border-width: 0;
