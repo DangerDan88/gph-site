@@ -7,10 +7,9 @@ const mapStyles = {
   width: "50%",
   height: "50%",
   margin: "auto",
-  width: "50%",
 }
 
-export class MapContainer extends Component {
+export class locationsPage extends Component {
   state = {
     showingInfoWindow: false, //Hides or the shows the infoWindow
     activeMarker: {}, //Shows the active marker upon click
@@ -37,9 +36,9 @@ export class MapContainer extends Component {
     return (
       <Layout>
         <SEO title="Locations" />
-        <div className="container">
-          <div className="flex justify-center">
-            {" "}
+        <div className="container block">
+          <div id="locationPic" className="flex justify-center">
+            <h1 className="text-4xl">Locations</h1>
             <Map
               google={this.props.google}
               zoom={16}
@@ -69,4 +68,4 @@ export class MapContainer extends Component {
 
 export default GoogleApiWrapper({
   apiKey: process.env.GATSBY_API_KEY,
-})(MapContainer)
+})(locationsPage)

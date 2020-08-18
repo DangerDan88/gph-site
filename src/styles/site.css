@@ -28,3 +28,9 @@ hr {
   color: gray;
   background-color: gray;
 }
+
+#locationPic {
+  background-image: url("../images/main.jpg");
+  background-position: center;
+  background-size: cover;
+}
