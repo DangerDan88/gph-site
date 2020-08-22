@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import main from "../images/main.jpg"
+import mainJump from "../images/mainjump.jpg"
 
 const indexPage = () => (
   <Layout>
@@ -30,11 +30,11 @@ const indexPage = () => (
             Learn more
           </Link>
         </div>
-        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
+        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:max-w-sm sm:pl-12">
           {" "}
           <img
-            className="w-full h-64 sm:h-auto rounded-lg"
-            src={main}
+            className="w-full h-64 mx-auto rounded-lg"
+            src={mainJump}
             alt="logo"
           />
         </div>
