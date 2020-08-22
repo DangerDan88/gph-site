@@ -30,10 +30,10 @@ const indexPage = () => (
             Learn more
           </Link>
         </div>
-        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:max-w-sm sm:pl-12">
+        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:max-w-sm sm:pl-12 lg:max-w-lg lg:pr-20 lg:h-full">
           {" "}
           <img
-            className="w-full h-64 mx-auto rounded-lg"
+            className="w-full h-64 mx-auto rounded-lg lg:w-full lg:h-full"
             src={mainJump}
             alt="logo"
           />
