@@ -3,6 +3,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`, // or '.env'
 })
 
+const path = require("path")
 // And then you can use the config in gatsby-config.js
 const config = require("gatsby-plugin-config")
 module.exports = {
@@ -14,6 +15,8 @@ module.exports = {
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,18 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Lani from "../images/lani.jpg"
-import Kids from "../images/laniKids.jpg"
-import Carrie from "../images/carrie.jpg"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const aboutPage = () => (
+const aboutPage = ({ data }) => (
   <Layout>
     <SEO title="About" />
     <div className="bg-red-900 p-4 rounded-lg">
-      <h1 class="text-white flex justify-center text-4xl">
+      <h1 className="text-white flex justify-center text-4xl">
         A Little Bit About GPH
       </h1>
-      <div class="bg-red-900 flex justify-center py-4 text-2xl text-white">
+      <div className="bg-red-900 flex justify-center py-4 text-2xl text-white">
         Specializing in Hunter/Jumpers, Eventing and Dressage, Lani brings
         extensive experience and a wide breadth of knowledge to her students and
         the horses she is training. Lani has been teaching and training for over
@@ -28,66 +27,48 @@ const aboutPage = () => (
         indoor and outdoor riding arenas, roomy stalls for happy horses, and
         multiple turnout spaces.
       </div>
-      <main class="flex flex-col-reverse sm:flex-row items-center py-12">
-        <div class="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h2 class="uppercase text-4xl text-white leading-none tracking-wide mb-2 pl-4">
+      <main className="flex flex-col-reverse sm:flex-row items-center py-12">
+        <div className="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
+          <h2 className="uppercase text-4xl text-white leading-none tracking-wide mb-2 pl-4">
             The Boss
           </h2>
 
-          <p class="text-white text-xl leading-relaxed mb-12">
+          <p className="text-white text-xl leading-relaxed mb-12">
             Lani Taylor: Head Trainer and Decision Maker
           </p>
         </div>
-        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
+        <div className="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
           {" "}
-          <img
-            className="h-2/4 w-2/4 rounded-lg"
-            src={Lani}
-            alt="lani"
-            height="100px"
-            width="100px"
-          />
+          <Img fluid={data.aboutLani.childImageSharp.fluid} alt="lani" />
         </div>
       </main>
-      <main class="flex flex-col-reverse sm:flex-row items-center py-12">
-        <div class="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h3 class="uppercase text-4xl text-white  leading-none tracking-wide mb-2 pl-4">
+      <main className="flex flex-col-reverse sm:flex-row items-center py-12">
+        <div className="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
+          <h3 className="uppercase text-4xl text-white  leading-none tracking-wide mb-2 pl-4">
             The Book Keeper
           </h3>
 
-          <p class="text-white text-xl leading-relaxed mb-12">
+          <p className="text-white text-xl leading-relaxed mb-12">
             Carrie Matteson: Bill Sender and Question Answerer{" "}
           </p>
         </div>
-        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
+        <div className="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
           {" "}
-          <img
-            className="h-2/4 w-2/4 rounded-lg"
-            src={Carrie}
-            alt="carrie"
-            height="100px"
-            width="100px"
-          />
+          <Img fluid={data.carrieJump.childImageSharp.fluid} alt="carrie" />
         </div>
       </main>
-      <main class="flex flex-col-reverse sm:flex-row items-center py-12">
-        <div class="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-          <h4 class="uppercase text-4xl text-white  leading-none tracking-wide mb-2 pl-4">
+      <main className="flex flex-col-reverse sm:flex-row items-center py-12">
+        <div className="bg-red-900 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
+          <h4 className="uppercase text-4xl text-white  leading-none tracking-wide mb-2 pl-4">
             The Girlies
           </h4>
-          <p class="text-white text-xl leading-relaxed mb-12">
+          <p className="text-white text-xl leading-relaxed mb-12">
             Brooklyn and Holly: Fashionistas and Future Olympians{" "}
           </p>
         </div>
-        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
+        <div className="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
           {" "}
-          <img
-            className="h-2/4 w-2/4 rounded-lg"
-            src={Kids}
-            alt="lani"
-            height="100px"
-            width="100px"
-          />
+          <Img fluid={data.girlsPic.childImageSharp.fluid} alt="kids" />
         </div>
       </main>
     </div>
@@ -95,3 +76,32 @@ const aboutPage = () => (
 )
 
 export default aboutPage
+
+export const query = graphql`
+  query {
+    aboutLani: file(relativePath: { eq: "aboutLani.jpg" }) {
+      id
+      childImageSharp {
+        fluid(fit: CONTAIN) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    girlsPic: file(relativePath: { eq: "laniKids.jpg" }) {
+      id
+      childImageSharp {
+        fluid(fit: CONTAIN) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    carrieJump: file(relativePath: { eq: "carrie.jpg" }) {
+      id
+      childImageSharp {
+        fluid(fit: CONTAIN) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
