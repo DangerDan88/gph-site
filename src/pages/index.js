@@ -49,11 +49,10 @@ export const query = graphql`
     mainjumpGatsbyImage: file(relativePath: { eq: "mainjump.jpeg" }) {
       id
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }
     }
   }
 `
-//(maxWidth: 2000)
