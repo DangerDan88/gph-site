@@ -30,7 +30,7 @@ const indexPage = ({ data }) => (
             Learn more
           </Link>
         </div>
-        <div className="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:max-w-sm sm:pl-12 lg:max-w-lg lg:pr-20 lg:h-full">
+        <div className="mb-16 lg:max-w-lg lg:pr-20 lg:h-full sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:max-w-sm sm:pl-12">
           {" "}
           <Img
             fluid={data.mainjumpGatsbyImage.childImageSharp.fluid}
