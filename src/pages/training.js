@@ -17,6 +17,8 @@ const trainingPage = () => (
             <h3 className="font-semibold text-black text-3xl">Lessons</h3>
             <p className="text-2xl">Group Jump Lesson</p>
             <p2 className="text-xl">$45</p2>
+            <p className="text-2xl">Private Lesson</p>
+            <p2 className="text-xl">$50 (45 min)</p2>
           </div>
           <div className="col-span-2 sm:col-span-1 xl:col-span-1 italic "></div>
 

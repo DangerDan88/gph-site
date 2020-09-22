@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa"
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
-      jumperGatsbyImage: file(relativePath: { eq: "jumper.jpg" }) {
+      jumperGatsbyImage: file(relativePath: { eq: "main.jpg" }) {
         id
         childImageSharp {
           fluid(maxWidth: 2000, maxHeight: 955, fit: INSIDE) {
@@ -17,7 +17,8 @@ const Footer = () => {
       }
     }
   `)
-  console.log(data)
+
+  //console.log(data)
   return (
     <footer>
       <div className="bg-green-900">

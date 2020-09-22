@@ -58,9 +58,7 @@ const locationsPage = () => (
         </div>
         <div className="bg-white overflow-hidden hover:bg-red-900 border border-gray-200 p-3">
           <div className="m-2 text-justify text-sm">
-            <h2 className="font-bold text-lg h-2 mb-8">
-              Rydermore Equestrian{" "}
-            </h2>
+            <h2 className="font-bold text-lg h-2 mb-8">Rydemore Equestrian </h2>
             <p className="text-xs"></p>
           </div>
           <div className="w-full text-right mt-4">
