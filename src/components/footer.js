@@ -10,7 +10,7 @@ const Footer = () => {
       jumperGatsbyImage: file(relativePath: { eq: "main.jpg" }) {
         id
         childImageSharp {
-          fluid(maxWidth: 2000, maxHeight: 955, fit: INSIDE) {
+          fluid(maxWidth: 1000, maxHeight: 500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -18,10 +18,10 @@ const Footer = () => {
     }
   `)
 
-  //console.log(data)
   return (
     <footer>
-      <div className="bg-green-900">
+      <div className="bg-gray-700">
+        {" "}
         <a href="https://www.instagram.com/gphequestrian/">
           {" "}
           <FaInstagram size={28} />

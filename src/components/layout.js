@@ -20,14 +20,14 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        className="bg-green-900 w-full"
+        className="bg-gray-700 w-full"
         style={{
           margin: `0 auto`,
           // maxWidth: 1060,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main className="bg-green-900">{children}</main>
+        <main className="bg-gray-700">{children}</main>
       </div>
       <div>
         <Footer />

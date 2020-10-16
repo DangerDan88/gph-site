@@ -7,9 +7,9 @@ import { FaEnvelopeSquare } from "react-icons/fa"
 const contactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <div className="bg-red-900 p-4 rounded-lg" id="contact">
+    <div className="bg-gray-700 p-4 rounded-lg" id="contact">
       <h1 className="text-white flex justify-center text-4xl"> Contact Us </h1>
-      <div className="max-w-3xl bg-green-900 text-white text-2xl rounded-lg mx-auto my-16 p-16 border-solid border-4 border-red-900">
+      <div className="max-w-3xl bg-black text-white text-2xl rounded-lg shadow-lg mx-auto my-16 p-16">
         <div className="flex justify-center py-4">
           <FaPhone size={28} /> 801-822-4011
         </div>

@@ -7,10 +7,10 @@ import Img from "gatsby-image/withIEPolyfill"
 const aboutPage = ({ data }) => (
   <Layout>
     <SEO title="About" />
-    <h1 className="text-white flex justify-center text-4xl">
+    <h1 className="text-white flex justify-center text-4xl pt-3">
       A Little Bit About GPH
     </h1>
-    <div className="bg-red-900 flex justify-center py-4 text-2xl text-white rounded-lg">
+    <div className="bg-gray-700 flex justify-center py-4 text-2xl text-white rounded-lg">
       Specializing in Hunter/Jumpers, Eventing and Dressage, Lani brings
       extensive experience and a wide breadth of knowledge to her students and
       the horses she is training. Lani has been teaching and training for over

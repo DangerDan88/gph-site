@@ -5,59 +5,115 @@ import SEO from "../components/seo"
 const trainingPage = () => (
   <Layout>
     <SEO title="Training" />
-    <div id="menu" className="container mx-auto px-4 lg:pt-24 lg:pb-64">
-      <div className="flex flex-wrap text-center justify-center">
-        <div className="w-full lg:w-6/12 px-4">
-          <h2 className="text-4xl font-semibold text-black">2020 Price List</h2>
+    <h1 className="text-white flex justify-center text-4xl pt-3">
+      Training/Lessons
+    </h1>
+    <div className="container px-5 py-24 mx-auto">
+      <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        {" "}
+        <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Group Jump Lesson
+            </div>
+            <div className="title-post font-medium pt-2">$45</div>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-wrap mt-12 justify-center bg-red-900 rounded-lg shadow-lg">
-        <div className="grid grid-cols-1 sm:grid-cols-6 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-4">
-          <div className="col-span-2 sm:col-span-4 xl:col-span-4">
-            <h3 className="font-semibold text-black text-3xl">Lessons</h3>
-            <p className="text-2xl">Group Jump Lesson</p>
-            <p2 className="text-xl">$45</p2>
-            <p className="text-2xl">Private Lesson</p>
-            <p2 className="text-xl">$50 (45 min)</p2>
+        <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Private Lesson
+            </div>
+            <div className="title-post font-medium pt-2">$50 (45 min)</div>
           </div>
-          <div className="col-span-2 sm:col-span-1 xl:col-span-1 italic "></div>
-
-          <div className="col-span-2 sm:col-span-4 xl:col-span-4">
-            <h3 className="font-semibold text-black text-3xl">Training</h3>
-            <p className="text-2xl">Single Training Ride</p>
-            <p2 className="text-xl">$50</p2>
-            <p className="text-2xl">
+        </div>
+        <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Single Training Ride
+            </div>
+            <div className="title-post font-medium pt-2">$50</div>
+          </div>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
               Part Time Training (no lessons, 2 rides per week)
-            </p>
-            <p2 className="text-xl">$300</p2>
-            <p className="text-xl">
-              Full Time Training (no lessons, 4 rides per week)
-            </p>
-            <p2 className="text-xl">$500</p2>
-            <p className="text-2xl">
-              Part Time Package (2 lessons per week, 2 training rides per month)
-            </p>
-            <p2 className="text-xl">$400</p2>
-            <p className="text-2xl">
-              Full Time Package (3 lessons per week, 4 training rides per month)
-            </p>
-            <p2 className="text-xl">$550</p2>
+            </div>
+            <div className="title-post font-medium pt-2">$300</div>
           </div>
-          <div className="col-span-2 sm:col-span-4 xl:col-span-4">
-            <h3 className="font-semibold text-black text-3xl">Other</h3>
-            <p className="text-2xl">Cross Country Schooling (group only)</p>
-            <p2 className="text-xl">$50</p2>
-            <p className="text-2xl">Trailering</p>
-            <p2 className="text-xl">50 cents per mile, min($40)</p2>
-            <p className="text-2xl">Show Coaching</p>
-            <p2 className="text-xl">$50</p2>
-            <p className="text-2xl">Buying or Selling Commission</p>
-            <p2 className="text-xl">10% of purchase price</p2>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Full Time Training (no lessons, 4 rides per week){" "}
+            </div>
+            <div className="title-post font-medium pt-2">$500</div>
+          </div>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Part Time Package (2 lessons per week, 2 training rides per month)
+            </div>
+            <div className="title-post font-medium pt-2">$400</div>
+          </div>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Full Time Package (3 lessons per week, 4 training rides per month)
+            </div>
+            <div className="title-post font-medium pt-2">$550</div>
+          </div>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Cross Country Schooling (group only)
+            </div>
+            <div className="title-post font-medium pt-2">$50</div>
+          </div>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">Trailering</div>
+            <div className="title-post font-medium pt-2">
+              50 cents per mile, min($40)
+            </div>
+          </div>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Show Coaching
+            </div>
+            <div className="title-post font-medium pt-2">$50 </div>
+          </div>
+        </div>
+        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+          {" "}
+          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
+            <div className="header-content inline-flex text-xl">
+              Buying or Selling Commission
+            </div>
+            <div className="title-post font-medium pt-2">
+              10% of purchase price
+            </div>
           </div>
         </div>
       </div>
     </div>
   </Layout>
 )
-//look into tailwind multiple classes fix
 export default trainingPage

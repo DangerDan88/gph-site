@@ -15,26 +15,26 @@ const ToggleDrop = () => {
             {" "}
             <Link
               to="/sales"
-              className="block px-4 py-2 hover:bg-gray-500 hover:text-white"
+              className="block text-xl px-4 py-2 hover:bg-gray-500 hover:text-white"
             >
               {" "}
               Sales/Lease{" "}
             </Link>{" "}
             <Link
               to="/locations"
-              className="block px-4 py-2 hover:bg-gray-500 hover:text-white"
+              className="block text-xl px-4 py-2 hover:bg-gray-500 hover:border-red-700"
             >
               Locations
             </Link>
             <Link
               to="/training"
-              className="block px-4 py-2 hover:bg-gray-500 hover:text-white"
+              className="block text-xl px-4 py-2 hover:bg-gray-500 hover:border-red-700"
             >
               Training/Services
             </Link>
             <Link
               to="/events"
-              className="block px-4 py-2 hover:bg-gray-500 hover:text-white"
+              className="block text-xl px-4 py-2 hover:bg-gray-500 hover:border-red-700"
             >
               Events
             </Link>{" "}
@@ -44,7 +44,7 @@ const ToggleDrop = () => {
           onClick={() => toggle(toggled => !toggled)}
           className="block h-8 w-8"
           to="/services"
-          className="text-white border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-700"
+          className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-700"
         >
           {" "}
           Services{" "}

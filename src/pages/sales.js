@@ -6,7 +6,7 @@ const salesPage = () => (
   <Layout>
     <SEO title="Sales" />
     <div className="flex justify-center">
-      <h1 className="text-white text-4xl">Sales/Leases</h1>
+      <h1 className="text-white text-4xl pt-3">Sales/Leases</h1>
     </div>
     <div className="flex justify-center">
       {" "}
