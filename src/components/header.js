@@ -31,8 +31,8 @@ export default function Header({ data }) {
               <img
                 src={GPH}
                 alt="logo"
-                height="250vh"
-                width="125vh"
+                height="50vh"
+                width="50vh"
                 className="rounded-lg"
               />
             </div>
