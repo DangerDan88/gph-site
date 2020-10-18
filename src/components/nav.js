@@ -15,7 +15,7 @@ const nav = () => (
           <li>
             {" "}
             <Link
-              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-700 shadow-lg"
+              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-red-700 hover:border-red-700 shadow-lg"
               to="/"
             >
               Home
@@ -25,7 +25,7 @@ const nav = () => (
             {" "}
             <Link
               to="/about"
-              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-700 shadow-lg"
+              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-red-700 hover:border-red-700 shadow-lg"
             >
               About Us{" "}
             </Link>
@@ -34,7 +34,7 @@ const nav = () => (
           <li>
             {" "}
             <Link
-              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-700"
+              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-red-700 hover:border-red-700"
               to="/contact/"
             >
               Contact Us

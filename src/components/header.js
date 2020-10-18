@@ -2,7 +2,8 @@ import React from "react"
 import Nav from "../components/nav"
 import { graphql, StaticQuery } from "gatsby"
 import GPH from "../images/gphlogo.jpg"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 
 export default function Header({ data }) {
   return (
@@ -11,7 +12,7 @@ export default function Header({ data }) {
         query {
           headerImage: file(relativePath: { eq: "headerImageGph.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1450, maxHeight: 600, quality: 100) {
+              fluid(maxWidth: 1200, maxHeight: 550, quality: 100) {
                 ...GatsbyImageSharpFluid
                 ...GatsbyImageSharpFluidLimitPresentationSize
               }
@@ -21,10 +22,12 @@ export default function Header({ data }) {
       `}
       render={data => (
         <header>
-          <div className="bg-black">
-            {" "}
-            <Img Tag="section" fluid={data.headerImage.childImageSharp.fluid} />
-            <div className="h-32 flex justify-center">
+          <BackgroundImage
+            className=""
+            id="mainPic"
+            fluid={data.headerImage.childImageSharp.fluid}
+          >
+            <div className="flex justify-center">
               <img
                 src={GPH}
                 alt="logo"
@@ -33,7 +36,7 @@ export default function Header({ data }) {
                 className="rounded-lg"
               />
             </div>
-          </div>
+          </BackgroundImage>
           <Nav />
         </header>
       )}

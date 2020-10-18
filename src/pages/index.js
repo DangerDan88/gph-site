@@ -17,7 +17,7 @@ const indexPage = ({ data }) => (
           <h1 className="uppercase text-6xl text-white font-bold leading-none tracking-wide mb-2">
             GPH
           </h1>
-          <h2 className="uppercase text-4xl text-white text-secondary tracking-widest mb-6">
+          <h2 className="uppercase text-4xl font-bold text-white text-secondary tracking-widest mb-6">
             Equestrian
           </h2>
           <p className="text-white text-2xl leading-relaxed mb-12">
@@ -29,7 +29,7 @@ const indexPage = ({ data }) => (
           </p>
           <Link
             to="/about"
-            className="bg-black hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+            className="bg-black hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-white hover:border-blue-500 rounded"
           >
             Learn more
           </Link>
