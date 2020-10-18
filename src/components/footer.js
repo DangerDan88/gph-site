@@ -15,6 +15,28 @@ const Footer = () => {
           }
         }
       }
+
+      sponsor: file(relativePath: { eq: "sponsor1.jpg" }) {
+        childImageSharp {
+          fixed(height: 150, width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      sponsorPic: file(relativePath: { eq: "sponsor2.jpg" }) {
+        childImageSharp {
+          fixed(height: 150, width: 450) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      sponsor3: file(relativePath: { eq: "sponsor3.jpg" }) {
+        childImageSharp {
+          fixed(height: 450, width: 450) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -29,6 +51,26 @@ const Footer = () => {
           {" "}
           <FaFacebook size={28} />{" "}
         </a>
+        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+            <div className="bg-cover bg-center">
+              <Img fixed={data.sponsor.childImageSharp.fixed} alt="sponsor" />
+            </div>
+          </div>
+          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+            <div className="bg-cover bg-center">
+              <Img
+                fixed={data.sponsorPic.childImageSharp.fixed}
+                alt="sponsor"
+              />
+            </div>
+          </div>
+          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
+            <div className="bg-cover bg-center">
+              <Img fixed={data.sponsor3.childImageSharp.fixed} alt="sponsor" />
+            </div>
+          </div>
+        </div>
         <Img
           fluid={data.jumperGatsbyImage.childImageSharp.fluid}
           alt="footer jump"

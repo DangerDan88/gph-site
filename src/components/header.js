@@ -27,7 +27,7 @@ export default function Header({ data }) {
             id="mainPic"
             fluid={data.headerImage.childImageSharp.fluid}
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center pt-3">
               <img
                 src={GPH}
                 alt="logo"
