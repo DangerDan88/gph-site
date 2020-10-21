@@ -24,3 +24,8 @@ html {
 #mainPic {
   height: 75vh;
 }
+
+.logo {
+  height: 25vh;
+  width: 25vh;
+}

@@ -3,7 +3,7 @@ import React from "react"
 import ToggleDrop from "../components/toggleDrop"
 import { FaBars } from "react-icons/fa"
 
-const nav = () => (
+const nav = ({ data }) => (
   <div className="lg:px-16 px-6 flex justify-center bg-black sm:flex-wrap sm:items-center">
     <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
       <FaBars className="bg-white cursor-pointer fill-current text-gray-900 w-6 h-6" />
