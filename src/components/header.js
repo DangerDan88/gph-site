@@ -13,7 +13,6 @@ export default function Header({ data }) {
             childImageSharp {
               fluid {
                 base64
-                tracedSVG
                 srcWebp
                 srcSetWebp
                 originalImg
