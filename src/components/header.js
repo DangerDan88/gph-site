@@ -11,9 +11,13 @@ export default function Header({ data }) {
         query {
           headerImage: file(relativePath: { eq: "headerImageGph.jpg" }) {
             childImageSharp {
-              fluid(maxWidth: 1200, maxHeight: 550, quality: 100) {
-                ...GatsbyImageSharpFluid
-                ...GatsbyImageSharpFluidLimitPresentationSize
+              fluid {
+                base64
+                tracedSVG
+                srcWebp
+                srcSetWebp
+                originalImg
+                originalName
               }
             }
           }
@@ -33,7 +37,7 @@ export default function Header({ data }) {
             id="mainPic"
             fluid={data.headerImage.childImageSharp.fluid}
           >
-            <div className="flex justify-start pt-3">
+            <div className="flex justify-end pt-3">
               <img src={GPH} className="logo" alt="logo" />
             </div>
           </BackgroundImage>
