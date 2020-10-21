@@ -11,12 +11,12 @@ export default function Header({ data }) {
         query {
           headerImage: file(relativePath: { eq: "headerImageGph.jpg" }) {
             childImageSharp {
-              fluid {
-                base64
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
+              fluid(
+                srcSetBreakpoints: [100, 300, 450]
+                maxHeight: 600
+                maxWidth: 1200
+              ) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
