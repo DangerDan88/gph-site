@@ -17,6 +17,7 @@ const contactPage = () => (
           {" "}
           <FaEnvelopeSquare size={28} /> gphequestrian@gmail.com
         </div>
+        <div className="flex justify-center py-4">By Appointment Only</div>
       </div>
     </div>
   </Layout>
