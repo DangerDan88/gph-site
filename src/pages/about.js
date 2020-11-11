@@ -108,7 +108,7 @@ export const query = graphql`
         }
       }
     }
-    carrieJump: file(relativePath: { eq: "carrie.jpg" }) {
+    carrieJump: file(relativePath: { eq: "realcarrie.JPG" }) {
       childImageSharp {
         fixed(height: 225, width: 200) {
           ...GatsbyImageSharpFixed
