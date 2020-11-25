@@ -1,6 +1,5 @@
 import React from "react"
 import Nav from "../components/nav"
-//import { graphql, StaticQuery } from "gatsby"
 import HeaderImage from "./HeaderImage"
 import GPH from "../images/gphlogo.jpg"
 

@@ -6,114 +6,92 @@ const trainingPage = () => (
   <Layout>
     <SEO title="Training" />
     <h1 className="text-white flex justify-center text-4xl pt-3">
-      Training/Lessons
+      Training/Services
     </h1>
-    <div className="container px-5 py-24 mx-auto">
-      <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-        {" "}
-        <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
+    <div className="min-h-screen flex items-center">
+      <div className="flex-1 max-w-4xl mx-auto p-10">
+        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
               Group Jump Lesson
+              <br />
+              <p className="text-lg">$45</p>
             </div>
-            <div className="title-post font-medium pt-2">$45</div>
-          </div>
-        </div>
-        <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
+          </li>
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
               Private Lesson
+              <br />
+              <p className="text-lg">$50 (45min)</p>
             </div>
-            <div className="title-post font-medium pt-2">$50 (45 min)</div>
-          </div>
-        </div>
-        <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
               Single Training Ride
+              <br />
+              <p className="text-lg">$50</p>
+            </div>{" "}
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Part Time Training (no lessons, 2 rides per week) <br />
+              <p className="text-lg">$300</p>
             </div>
-            <div className="title-post font-medium pt-2">$50</div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
-              Part Time Training (no lessons, 2 rides per week)
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Full Time Training (no lessons, 4 rides per week) <br />
+              <p className="text-lg">$500</p>
             </div>
-            <div className="title-post font-medium pt-2">$300</div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
-              Full Time Training (no lessons, 4 rides per week){" "}
-            </div>
-            <div className="title-post font-medium pt-2">$500</div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
               Part Time Package (2 lessons per week, 2 training rides per month)
+              <br />
+              <p className="text-lg">$400</p>
             </div>
-            <div className="title-post font-medium pt-2">$400</div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
-              Full Time Package (3 lessons per week, 4 training rides per month)
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Full Time Package (3 lessons per week, 4 training rides per month){" "}
+              <br />
+              <p className="text-lg">$550</p>
             </div>
-            <div className="title-post font-medium pt-2">$550</div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
-              Cross Country Schooling (group only)
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Cross Country Schooling (group only) <br />
+              <p className="text-lg">$50</p>
             </div>
-            <div className="title-post font-medium pt-2">$50</div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">Trailering</div>
-            <div className="title-post font-medium pt-2">
-              50 cents per mile, min($40)
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Trailering <br />
+              <p className="text-lg">50 cents per mile, min($40)</p>
             </div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
-              Show Coaching
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Show Coaching <br />
+              <p className="text-lg">$50</p>
             </div>
-            <div className="title-post font-medium pt-2">$50 </div>
-          </div>
-        </div>
-        <div className="pt-3 p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-          {" "}
-          <div className=" w-70 bg-white mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-            <div className="header-content inline-flex text-xl">
-              Buying or Selling Commission
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Buying or Selling <br />
+              <p className="text-lg">10% of purchase price</p>
             </div>
-            <div className="title-post font-medium pt-2">
-              10% of purchase price
+          </li>{" "}
+          <li className="bg-white rounded-lg shadow-xl">
+            <div className="h-32 text-center text-xl">
+              Stud Finder <br />
+              <p className="text-lg">Price is tentative</p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </Layout>
 )
+
 export default trainingPage
