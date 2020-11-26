@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Sponsor from "../components/sponsor"
 import { FaInstagram } from "react-icons/fa"
 import { FaFacebook } from "react-icons/fa"
 
@@ -51,26 +52,7 @@ const Footer = () => {
           {" "}
           <FaFacebook size={28} />{" "}
         </a>
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-            <div className="bg-cover bg-center">
-              <Img fixed={data.sponsor.childImageSharp.fixed} alt="sponsor" />
-            </div>
-          </div>
-          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-            <div className="bg-cover bg-center">
-              <Img
-                fixed={data.sponsorPic.childImageSharp.fixed}
-                alt="sponsor"
-              />
-            </div>
-          </div>
-          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-            <div className="bg-cover bg-center">
-              <Img fixed={data.sponsor3.childImageSharp.fixed} alt="sponsor" />
-            </div>
-          </div>
-        </div>
+        <Sponsor />
         <Img
           fluid={data.jumperGatsbyImage.childImageSharp.fluid}
           alt="footer jump"
