@@ -7,7 +7,7 @@ const Sponsor = () => {
     query {
       sponsor: file(relativePath: { eq: "sponsor1.jpg" }) {
         childImageSharp {
-          fluid(maxHeight: 150, maxWidth: 150) {
+          fluid(maxHeight: 125, maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -21,7 +21,7 @@ const Sponsor = () => {
       }
       sponsor3: file(relativePath: { eq: "sponsor3.jpg" }) {
         childImageSharp {
-          fluid(maxHeight: 450, maxWidth: 450) {
+          fluid(maxHeight: 425, maxWidth: 450) {
             ...GatsbyImageSharpFluid
           }
         }
