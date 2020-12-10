@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  variants: {},
-  plugins: [],
+  variants: { backgroundColor: ["active"] },
+  plugins: ["gatsby-plugin-postcss"],
   purge: false,
 }

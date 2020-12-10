@@ -21,7 +21,7 @@ const Sponsor = () => {
       }
       sponsor3: file(relativePath: { eq: "sponsor3.jpg" }) {
         childImageSharp {
-          fluid(maxHeight: 425, maxWidth: 450) {
+          fluid(maxHeight: 125, maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
