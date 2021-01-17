@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Sponsor from "../components/sponsor"
+//import Sponsor from "../components/sponsor"
 import { FaInstagram } from "react-icons/fa"
 import { FaFacebook } from "react-icons/fa"
+//TODO fix sponsor images they are fuzzy on render time
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -52,7 +53,6 @@ const Footer = () => {
           {" "}
           <FaFacebook size={28} />{" "}
         </a>
-        <Sponsor />
         <Img
           fluid={data.jumperGatsbyImage.childImageSharp.fluid}
           alt="footer jump"
