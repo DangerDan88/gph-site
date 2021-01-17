@@ -7,22 +7,18 @@ const ToggleDrop = () => {
   ToggleDrop.handleClickOutside = () => toggle(false)
   return (
     <li>
-      {" "}
       <div className="shadow-lg">
-        {" "}
         {toggled && (
           <div className="absolute bg-white py-2 rounded-lg shadow-xl mt-16">
-            {" "}
             <Link
               to="/sales"
               className="block text-xl px-4 py-2 hover:bg-gray-300"
             >
-              {" "}
-              Sales/Lease{" "}
-            </Link>{" "}
+              Sales/Lease
+            </Link>
             <Link
               to="/locations"
-              className="block text-xl px-4  py-2 hover:bg-green-700"
+              className="block text-xl px-4 py-2 hover:bg-green-700"
             >
               Locations
             </Link>
@@ -37,19 +33,18 @@ const ToggleDrop = () => {
               className="block text-xl px-4 py-2 hover:bg-green-700"
             >
               Events
-            </Link>{" "}
+            </Link>
           </div>
-        )}{" "}
+        )}
         <button
           onClick={() => toggle(toggled => !toggled)}
           className="block h-8 w-8"
           to="/services"
           className="text-white text-2xl lg:p-4 py-3 px-0 block hover:bg-green-700"
         >
-          {" "}
-          Services{" "}
-        </button>{" "}
-      </div>{" "}
+          Services
+        </button>
+      </div>
     </li>
   )
 }
