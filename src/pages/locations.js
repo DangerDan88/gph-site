@@ -4,7 +4,9 @@ import Layout from "../components/layout"
 
 const locationsPage = () => (
   <Layout>
-    <h1 className="flex justify-center pt-3 text-4xl text-white">Locations</h1>
+    <h1 className="flex justify-center pt-3 text-4xl text-white font-bold">
+      Locations
+    </h1>
     <div className="bg-gray-700">
       <div className="max-w-3xl bg-gray-700 text-white text-2xl rounded-lg mx-auto my-16">
         <div className="flex justify-center py-4 bg-black">

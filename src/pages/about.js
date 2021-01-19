@@ -5,7 +5,7 @@ import Img from "gatsby-image/withIEPolyfill"
 
 const aboutPage = ({ data }) => (
   <Layout>
-    <h1 className="text-white flex justify-center text-4xl pt-3">
+    <h1 className="text-white flex justify-center text-4xl pt-3 font-bold">
       A Little Bit About GPH
     </h1>
     <div className="bg-gray-700 flex justify-center py-4 text-2xl text-white rounded-lg">

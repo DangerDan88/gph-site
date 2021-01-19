@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const trainingPage = () => (
   <Layout>
-    <h1 className="text-white flex justify-center text-4xl pt-3">
+    <h1 className="text-white flex justify-center text-4xl pt-3 font-bold">
       Training/Services
     </h1>
     <div className="min-h-screen flex items-center">

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 const salesPage = () => (
   <Layout>
     <div className="flex justify-center">
-      <h1 className="text-white text-4xl pt-3">Sales/Leases</h1>
+      <h1 className="text-white text-4xl pt-3 font-bold">Sales/Leases</h1>
     </div>
     <div className="flex justify-center">
       {" "}
