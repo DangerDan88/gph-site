@@ -18,7 +18,7 @@ const indexPage = ({ data }) => (
           <h1 className="uppercase text-6xl text-white font-bold leading-none tracking-wide mb-2">
             GPH
           </h1>
-          <h2 className="uppercase text-5xl font-bold text-white tracking-widest mb-6">
+          <h2 className="uppercase text-4xl font-bold text-white tracking-widest mb-6">
             Equestrian
           </h2>
           <p className="text-white text-2xl leading-relaxed mb-12">

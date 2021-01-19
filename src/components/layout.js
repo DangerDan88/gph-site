@@ -3,9 +3,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Footer from "../components/footer"
 import Header from "./header"
-
 import "../styles/site.css"
-
+//TODO add layout to gatsby browser file so i do not need to wrap every page in layout component
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

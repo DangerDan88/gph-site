@@ -3,7 +3,7 @@ import React from "react"
 import ToggleDrop from "../components/toggleDrop"
 import { FaBars } from "react-icons/fa"
 
-const nav = ({ data }) => (
+const nav = () => (
   <div className="lg:px-16 px-6 flex justify-center bg-black sm:flex-wrap sm:items-center">
     <label htmlFor="menu-toggle" className="cursor-pointer lg:hidden block">
       <FaBars className="bg-white cursor-pointer fill-current text-gray-900 w-6 h-6" />
@@ -11,27 +11,21 @@ const nav = ({ data }) => (
     <input id="menu-toggle" type="checkbox" className="hidden" />
     <div className="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
       <nav>
-        <ul className="lg:flex items-center justify-between text-base pt-4 lg:pt-0 shadow-lg">
+        <ul className="lg:flex items-center justify-between text-base pt-4 lg:pt-0 shadow-xl">
           <li>
-            <Link
-              className="text-white text-2xl lg:p-4 py-3 block shadow-lg"
-              to="/"
-            >
+            <Link className="text-white text-2xl lg:p-4 py-3 block" to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-              className="text-white text-2xl lg:p-4 py-3 block shadow-lg"
-            >
+            <Link to="/about" className="text-white text-2xl lg:p-4 py-3 block">
               About Us{" "}
             </Link>
           </li>
           <ToggleDrop />
           <li>
             <Link
-              className="text-white text-2xl lg:p-4 py-3 block shadow-lg"
+              className="text-white text-2xl lg:p-4 py-3 block"
               to="/contact/"
             >
               Contact Us
