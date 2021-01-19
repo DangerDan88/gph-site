@@ -1,10 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const trainingPage = () => (
   <Layout>
-    <SEO title="Training" />
     <h1 className="text-white flex justify-center text-4xl pt-3">
       Training/Services
     </h1>

@@ -7,7 +7,7 @@ const ToggleDrop = () => {
   ToggleDrop.handleClickOutside = () => toggle(false)
   return (
     <li>
-      <div className="shadow-lg border-2 border-b-2">
+      <div className="shadow-lg">
         {toggled && (
           <div className="absolute bg-white py-2 rounded-lg shadow-xl mt-16">
             <Link

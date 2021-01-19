@@ -1,11 +1,9 @@
 import React from "react"
 //import { Map, GoogleApiWrapper, InfoWindow, Marker } from "google-maps-react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const locationsPage = () => (
   <Layout>
-    <SEO title="Locations" />
     <h1 className="flex justify-center pt-3 text-4xl text-white">Locations</h1>
     <div className="bg-gray-700">
       <div className="max-w-3xl bg-gray-700 text-white text-2xl rounded-lg mx-auto my-16">

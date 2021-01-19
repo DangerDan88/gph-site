@@ -1,12 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import Img from "gatsby-image/withIEPolyfill"
 
 const aboutPage = ({ data }) => (
   <Layout>
-    <SEO title="About" />
     <h1 className="text-white flex justify-center text-4xl pt-3">
       A Little Bit About GPH
     </h1>

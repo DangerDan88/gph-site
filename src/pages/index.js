@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+//import SEO from "../components/seo"
 import Img from "gatsby-image"
 import {
   FaPhone,
@@ -12,7 +12,6 @@ import {
 
 const indexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
     <div className="p-4 bg-gray-700 rounded-lg">
       <main className="flex flex-col-reverse sm:flex-row justify-between items-center py-12">
         <div className="bg-gray-700 sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
