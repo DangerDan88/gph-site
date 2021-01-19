@@ -1,7 +1,7 @@
 import React from "react"
 import { FaPhone } from "react-icons/fa"
 import { FaEnvelopeSquare } from "react-icons/fa"
-//TODO on click of email send to default email form for user
+
 const contactPage = () => {
   return (
     <div className="bg-gray-700 p-4 rounded-lg" id="contact">
