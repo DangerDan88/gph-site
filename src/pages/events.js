@@ -1,14 +1,12 @@
 import React from "react"
-import Layout from "../components/layout"
-//import SEO from "../components/seo"
 
-const eventsPage = () => (
-  <Layout>
+const eventsPage = () => {
+  return (
     <div className="flex flex-col justify-center items-center rounded-lg text-2xl text-white pt-6">
       Events page is currently under review due to most events being in question
     </div>
-  </Layout>
-)
+  )
+}
 
 export default eventsPage
 
