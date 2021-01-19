@@ -7,30 +7,30 @@ const ToggleDrop = () => {
   ToggleDrop.handleClickOutside = () => toggle(false)
   return (
     <li>
-      <div className="shadow-lg">
+      <div className="shadow-lg border-2 border-b-2">
         {toggled && (
           <div className="absolute bg-white py-2 rounded-lg shadow-xl mt-16">
             <Link
               to="/sales"
-              className="block text-xl px-4 py-2 hover:bg-gray-300"
+              className="block bg-white hover:bg-red-700  text-xl px-4 py-2"
             >
               Sales/Lease
             </Link>
             <Link
               to="/locations"
-              className="block text-xl px-4 py-2 hover:bg-green-700"
+              className="block bg-white hover:bg-green-700 text-xl px-4 py-2"
             >
               Locations
             </Link>
             <Link
               to="/training"
-              className="block text-xl px-4 py-2 hover:bg-green-700"
+              className="block bg-white hover:bg-green-700 text-xl px-4 py-2"
             >
               Training/Services
             </Link>
             <Link
               to="/events"
-              className="block text-xl px-4 py-2 hover:bg-green-700"
+              className="block bg-white hover:bg-green-700 text-xl px-4 py-2 "
             >
               Events
             </Link>
@@ -40,7 +40,7 @@ const ToggleDrop = () => {
           onClick={() => toggle(toggled => !toggled)}
           className="block h-8 w-8"
           to="/services"
-          className="text-white text-2xl lg:p-4 py-3 px-0 block hover:bg-green-700"
+          className="text-white text-2xl lg:p-4 py-3 px-0 block"
         >
           Services
         </button>

@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 //import Sponsor from "../components/sponsor"
 import { FaInstagram } from "react-icons/fa"
 import { FaFacebook } from "react-icons/fa"
-//TODO fix sponsor images they are fuzzy on render time
+//TODO fix sponsor images they are fuzzy on render time rip out unused template from default gatsby template
 
 const Footer = () => {
   const data = useStaticQuery(graphql`

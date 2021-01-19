@@ -9,8 +9,7 @@ export default function Header() {
       <div id="imageWrap">
         <HeaderImage />
       </div>
-      <div className="flex justify-center">
-        {" "}
+      <div className="flex justify-center pb-2">
         <img src={GPH} className="logo" alt="logo" />
       </div>
       <div className="flex justify-center">

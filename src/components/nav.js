@@ -14,7 +14,7 @@ const nav = ({ data }) => (
         <ul className="lg:flex items-center justify-between text-base pt-4 lg:pt-0 shadow-lg">
           <li>
             <Link
-              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-green-700 shadow-lg active:bg-green-700"
+              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 shadow-lg"
               to="/"
             >
               Home
@@ -23,7 +23,7 @@ const nav = ({ data }) => (
           <li>
             <Link
               to="/about"
-              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-green-700 shadow-lg active:bg-green-700"
+              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 shadow-lg"
             >
               About Us{" "}
             </Link>
@@ -31,7 +31,7 @@ const nav = ({ data }) => (
           <ToggleDrop />
           <li>
             <Link
-              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:bg-green-700 shadow-lg active:bg-green-700"
+              className="text-white text-2xl border-2 lg:p-4 py-3 px-0 block border-b-2 shadow-lg"
               to="/contact/"
             >
               Contact Us
