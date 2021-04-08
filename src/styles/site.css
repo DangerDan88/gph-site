@@ -20,11 +20,14 @@ html {
 }
 
 #imageWrap {
-  max-width: 50vh;
-  max-height: 50vh;
-  margin: 0 auto 1.45rem;
+  display: flex;
 }
 
 .a {
   background: green;
+}
+
+#main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/mainjump.jpeg");
 }
