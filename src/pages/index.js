@@ -12,19 +12,19 @@ import { Link } from "gatsby"
 const indexPage = ({ data }) => {
   return (
     <div className="bg-gray-900">
-      <main className="min-h-screen flex text-white ">
+      <main className="max-w-xs md:max-w-4xl xl:max-w-6xl mx-auto py-4 flex flex-col min-h-screen text-white">
         <div
-          className="flex sm:flex-row justify-between items-center bg-gray-900 sm:w-full"
+          className="flex flex-col justify-between items-center bg-gray-900 sm:w-full"
           id="main"
         >
-          <div className="w-full px-48 z-10">
+          <div className="pt-16 z-10 md:max-w-4xl">
             <h1 className="text-5xl font-bold text-left tracking-wide">
               <span className="text-red-800">G</span>
               <span className="text-green-700">P</span>
               <span className="text-red-800 pr-2">H</span>
               Equestrian
             </h1>
-            <p className="text-2xl my-4">
+            <p className="text-2xl">
               Lani Taylor, the founder of GPH Equestrian, is actively committed
               to riding, training, coaching, and competing horses in
               Hunter/Jumpers, Eventing, and Dressage.
@@ -53,16 +53,15 @@ const indexPage = ({ data }) => {
           </div>
         </div>
       </main>
-      <div className="w-full bg-white px-5 py-10 text-gray-600">
-        <div className="max-w-5xl md:flex">
-          <div className="md:w-1/4 md:flex md:flex-col">
-            <div className="flex justify-center md:pr-5">
-              <h1 className="text-4xl font-bold">Training/Services</h1>
-            </div>
-          </div>
-          <div className="md:w-3/4">
+      <div className="flex justify-center md:pr-5 bg-white ">
+        <h1 className="text-4xl font-bold text-black ">Training/Services</h1>
+      </div>
+      <div className="w-full bg-white px-5 py-10 text-gray-600 md:max-w-full">
+        <div className="max-w-full md:flex">
+          <div className="md:w-1/4 md:flex md:flex-col"></div>
+          <div>
             <div className="max-w-3xl md:flex">
-              <div className="w-full md:w-1/3 bg-white md:px-10 md:py-10 mb-3 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+              <div className="w-full bg-white md:px-10 md:py-10 mb-3 rounded-md shadow-lg shadow-gray-600 md:flex">
                 <div className="w-full flex-grow">
                   <h2 className="text-center font-bold uppercase mb-4">
                     Group Jump Lesson
@@ -81,7 +80,7 @@ const indexPage = ({ data }) => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-white px-8 md:px-10 py-8 md:py-10 mb-3 md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
+              <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
                 <div className="w-full flex-grow">
                   <h2 className="text-center font-bold uppercase mb-4">
                     Private Lesson
@@ -110,7 +109,7 @@ const indexPage = ({ data }) => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-white px-8 md:px-10 py-8 md:py-10 mb-3 md:my-2 rounded-md shadow-lg shadow-gray-600">
+              <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:my-2 rounded-md shadow-lg shadow-gray-600">
                 <div className="w-full flex-grow">
                   <h2 className="text-center font-bold uppercase mb-4">
                     Single Training Ride
@@ -141,9 +140,9 @@ const indexPage = ({ data }) => {
               </div>
             </div>
           </div>
-          <div className="md:w-3/4">
-            <div className="max-w-4xl md:flex">
-              <div className="w-full md:w-1/3 bg-white px-8 md:px-10 py-8 md:py-10 mb-3 md:my-2 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+          <div>
+            <div className="max-w-3xl md:flex">
+              <div className="w-full bg-white md:px-10 md:py-10 mb-3 rounded-md shadow-lg shadow-gray-600 md:flex">
                 <div className="w-full flex-grow">
                   <h2 className="text-center font-bold uppercase mb-4">
                     Group Jump Lesson
@@ -162,7 +161,7 @@ const indexPage = ({ data }) => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-white px-8 md:px-10 py-8 md:py-10 mb-3 md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
+              <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
                 <div className="w-full flex-grow">
                   <h2 className="text-center font-bold uppercase mb-4">
                     Private Lesson
@@ -191,7 +190,7 @@ const indexPage = ({ data }) => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/3 bg-white px-8 md:px-10 py-8 md:py-10 mb-3 md:my-2 rounded-md shadow-lg shadow-gray-600 md:flex md:flex-col">
+              <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:my-2 rounded-md shadow-lg shadow-gray-600">
                 <div className="w-full flex-grow">
                   <h2 className="text-center font-bold uppercase mb-4">
                     Single Training Ride
