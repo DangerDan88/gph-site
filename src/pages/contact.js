@@ -4,7 +4,7 @@ import { FaEnvelopeSquare } from "react-icons/fa"
 
 const contactPage = () => {
   return (
-    <div className="bg-gray-700 p-4 rounded-lg" id="contact">
+    <div className="h-screen bg-gray-900 p-4" id="contact">
       <h1 className="text-white flex justify-center text-4xl font-bold">
         Contact Us
       </h1>

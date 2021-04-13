@@ -12,7 +12,7 @@ const Footer = () => {
       jumperGatsbyImage: file(relativePath: { eq: "main.jpg" }) {
         id
         childImageSharp {
-          fluid(maxWidth: 1300, maxHeight: 600) {
+          fluid {
             ...GatsbyImageSharpFluid
           }
         }
@@ -56,6 +56,7 @@ const Footer = () => {
         <Img
           fluid={data.jumperGatsbyImage.childImageSharp.fluid}
           alt="footer jump"
+          style={{ height: "65vh" }}
         />
         © {new Date().getFullYear()}
         {` `}

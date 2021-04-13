@@ -19,12 +19,11 @@ html {
   width: 15vh;
 }
 
-#imageWrap {
-  max-width: 50vh;
-  max-height: 50vh;
-  margin: 0 auto 1.45rem;
-}
-
-.a {
-  background: green;
+#nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/main.jpg");
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
