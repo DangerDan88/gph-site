@@ -19,15 +19,11 @@ html {
   width: 15vh;
 }
 
-#imageWrap {
-  display: flex;
-}
-
-.a {
-  background: green;
-}
-
-#main {
+#nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/mainjump.jpeg");
+    url("../images/main.jpg");
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

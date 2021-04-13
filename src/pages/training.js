@@ -2,13 +2,13 @@ import React from "react"
 
 const trainingPage = () => {
   return (
-    <div>
+    <div className="w-1/2">
       <h1 className="text-white flex justify-center text-4xl pt-3 font-bold">
         Training/Services
       </h1>
-      <div className="min-h-screen flex items-center">
+      <div className="w-1/2 min-h-screen flex items-center">
         <div className="flex-1 max-w-4xl mx-auto p-10">
-          <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
             <li className="bg-white rounded-lg shadow-xl">
               <div className="h-32 text-center text-xl">
                 Group Jump Lesson
