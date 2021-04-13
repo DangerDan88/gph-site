@@ -1,17 +1,15 @@
 import React from "react"
-import Footer from "../components/footer"
-import Header from "./header"
+import Nav from "./nav"
 import "../styles/site.css"
+
+//todo figure out nav bar error.
 
 const Layout = ({ children }) => {
   return (
     <div>
-      <Header />
-      <div className="bg-gray-700 w-full">
-        <main className="bg-gray-700">{children}</main>
-      </div>
+      <Nav />
       <div>
-        <Footer />
+        <main>{children}</main>
       </div>
     </div>
   )

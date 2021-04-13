@@ -4,11 +4,11 @@ import Img from "gatsby-image/withIEPolyfill"
 
 const aboutPage = ({ data }) => {
   return (
-    <div>
+    <div className="bg-gray-900">
       <h1 className="text-white flex justify-center text-4xl pt-3 font-bold">
         A Little Bit About GPH
       </h1>
-      <div className="bg-gray-700 flex justify-center py-4 text-2xl text-white rounded-lg">
+      <div className="bg-gray-900 flex justify-center py-4 text-2xl text-white rounded-lg">
         Specializing in Hunter/Jumpers, Eventing and Dressage, Lani brings
         extensive experience and a wide breadth of knowledge to her students and
         the horses she is training. Lani has been teaching and training for over
@@ -24,61 +24,36 @@ const aboutPage = ({ data }) => {
         indoor and outdoor riding arenas, roomy stalls for happy horses, and
         multiple turnout spaces.
       </div>
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-            <div className="bg-gray-300 h-56 rounded-lg shadow-md bg-cover bg-center">
-              {" "}
-              <Img
-                fixed={data.aboutLani.childImageSharp.fixed}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                alt="lani"
-              />
-            </div>
-            <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-              <div className="header-content inline-flex "></div>
-              <div className="title-post font-medium pt-2">
-                Lani Taylor: Head Trainer and Decision Maker
+      <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        <div className="card border w-80 hover:shadow-none relative flex flex-col mx-auto shadow-lg m-5">
+          <div className="profile w-full flex m-3 ml-4 text-white">
+            <Img fixed={data.aboutLani.childImageSharp.fixed} alt="lani" />
+            <div className="title mt-11 ml-3 font-bold flex flex-col">
+              <div className="name break-words text-xl">Lani</div>
+              <div className="add font-semibold text-sm italic dark">
+                Head Trainer
               </div>
             </div>
           </div>
-
-          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-            <div className="bg-gray-300 h-56  rounded-lg shadow-md bg-cover bg-center">
-              {" "}
-              <Img
-                fixed={data.carrieJump.childImageSharp.fixed}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                alt="carrie"
-              />
-            </div>
-
-            <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-              <div className="header-content inline-flex "></div>
-              <div className="title-post font-medium pt-2">
-                Carrie Matteson: Bill Sender and Info
+        </div>
+        <div className="card border w-80 hover:shadow-none relative flex flex-col mx-auto shadow-lg m-5">
+          <div className="profile w-full flex m-3 ml-4 text-white">
+            <Img fixed={data.carrieJump.childImageSharp.fixed} alt="lani" />
+            <div className="title mt-11 ml-3 font-bold flex flex-col">
+              <div className="name break-words text-xl">Carrie</div>
+              <div className="add font-semibold text-sm italic dark">
+                Bill Sender and Info
               </div>
             </div>
           </div>
-
-          <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col justify-center items-center max-w-sm mx-auto">
-            <div className="bg-gray-300 h-56  rounded-lg shadow-md bg-cover bg-center">
-              {" "}
-              <Img
-                fixed={data.girlsPic.childImageSharp.fixed}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                alt="girls"
-              />
-            </div>
-
-            <div className=" w-70 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-5">
-              <div className="header-content inline-flex "></div>
-              <div className="title-post font-medium pt-2">
-                {" "}
-                Brooklyn & Holly: Future Olympians
+        </div>
+        <div className="card border w-80 hover:shadow-none relative flex flex-col mx-auto shadow-lg m-5">
+          <div className="profile w-full flex m-3 ml-4 text-white">
+            <Img fixed={data.girlsPic.childImageSharp.fixed} alt="lani" />
+            <div className="title mt-11 ml-3 font-bold flex flex-col">
+              <div className="name break-words text-xl">Carrie</div>
+              <div className="add font-semibold text-sm italic dark">
+                Bill Sender and Info
               </div>
             </div>
           </div>
