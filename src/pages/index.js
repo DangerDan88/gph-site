@@ -29,12 +29,14 @@ const indexPage = ({ data }) => {
               to riding, training, coaching, and competing horses in
               Hunter/Jumpers, Eventing, and Dressage.
             </p>
-            <Link
-              to="/about"
-              className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-            >
-              Learn more
-            </Link>
+            <div className="pt-12">
+              <Link
+                to="/about"
+                className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Learn more
+              </Link>
+            </div>
           </div>
           <div className="bottom-0 absolute text-center right-0 left-0 flex justify-center space-x-4">
             <span className="pt-48">
@@ -61,7 +63,7 @@ const indexPage = ({ data }) => {
           <div className="md:w-1/4 md:flex md:flex-col"></div>
           <div>
             <div className="max-w-3xl md:flex">
-              <div className="w-full bg-white md:px-10 md:py-10 mb-3 rounded-md shadow-lg shadow-gray-600 md:flex">
+              <div className="w-full bg-white md:px-10 md:py-10 mb-3 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
                 <div className="w-full flex-grow">
                   <h2 className="text-center font-bold uppercase mb-4">
                     Group Jump Lesson
@@ -69,15 +71,6 @@ const indexPage = ({ data }) => {
                   <h3 className="text-center font-bold text-4xl mb-5">
                     $35<span className="text-sm">/per</span>
                   </h3>
-                  <ul className="text-sm mb-8">
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Lorem ipsum
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Dolor sit
-                      amet
-                    </li>
-                  </ul>
                 </div>
               </div>
               <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
@@ -88,25 +81,6 @@ const indexPage = ({ data }) => {
                   <h3 className="text-center font-bold text-4xl md:text-5xl mb-5">
                     $50<span className="text-sm">/45min</span>
                   </h3>
-                  <ul className="text-sm mb-8">
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Lorem ipsum
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Dolor sit
-                      amet
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Consectetur
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Adipisicing
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Elit
-                      repellat
-                    </li>
-                  </ul>
                 </div>
               </div>
               <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:my-2 rounded-md shadow-lg shadow-gray-600">
@@ -117,25 +91,6 @@ const indexPage = ({ data }) => {
                   <h3 className="text-center font-bold text-4xl mb-5">
                     $50<span className="text-sm">/per</span>
                   </h3>
-                  <ul className="text-sm mb-8">
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Lorem ipsum
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Dolor sit
-                      amet
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Consectetur
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Adipisicing
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Much
-                      more...
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -150,15 +105,6 @@ const indexPage = ({ data }) => {
                   <h3 className="text-center font-bold text-4xl mb-5">
                     $35<span className="text-sm">/per</span>
                   </h3>
-                  <ul className="text-sm mb-8">
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Lorem ipsum
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Dolor sit
-                      amet
-                    </li>
-                  </ul>
                 </div>
               </div>
               <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:-mx-3 md:mb-0 rounded-md shadow-lg shadow-gray-600 md:relative md:z-50 md:flex md:flex-col">
@@ -169,25 +115,6 @@ const indexPage = ({ data }) => {
                   <h3 className="text-center font-bold text-4xl md:text-5xl mb-5">
                     $50<span className="text-sm">/45min</span>
                   </h3>
-                  <ul className="text-sm mb-8">
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Lorem ipsum
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Dolor sit
-                      amet
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Consectetur
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Adipisicing
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Elit
-                      repellat
-                    </li>
-                  </ul>
                 </div>
               </div>
               <div className="w-full bg-white  md:px-10 py-8 md:py-10 mb-3 md:my-2 rounded-md shadow-lg shadow-gray-600">
@@ -198,25 +125,6 @@ const indexPage = ({ data }) => {
                   <h3 className="text-center font-bold text-4xl mb-5">
                     $50<span className="text-sm">/per</span>
                   </h3>
-                  <ul className="text-sm mb-8">
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Lorem ipsum
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Dolor sit
-                      amet
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Consectetur
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Adipisicing
-                    </li>
-                    <li className="leading-tight">
-                      <i className="mdi mdi-check-bold text-lg"></i> Much
-                      more...
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
