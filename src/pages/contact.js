@@ -12,8 +12,8 @@ const contactPage = () => {
         <div className="flex justify-center py-4">
           <FaPhone size={28} /> 801-822-4011
         </div>
-        <div className="flex justify-center">
-          <FaEnvelopeSquare size={28} />{" "}
+        <div className="flex justify-center py-4">
+          <FaEnvelopeSquare size={28} />
           <a href="mailto:gphequestrian@gmail.com">gphequestrian@gmail.com</a>
         </div>
         <div className="flex justify-center py-4">By Appointment Only</div>
